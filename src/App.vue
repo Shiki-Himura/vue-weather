@@ -91,12 +91,21 @@ main {
   min-height: 100vh;
   padding: 25px;
 
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
 }
 
 .search-box {
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 30px;  
+}
+
+@keyframes slideInTopToBottom{
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }
 
 .search-box .search-bar {
@@ -115,7 +124,7 @@ main {
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 2px 25px 2px 25px;
-  transition: 0.4s;
+  transition: 0.3s;
 }
 
 .search-box .search-bar:focus {
@@ -168,3 +177,4 @@ main {
 }
 
 </style>
+//animation: 1s ease-out 0s 1s slideInTopToBottom
