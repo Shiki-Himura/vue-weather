@@ -96,7 +96,7 @@ main {
 
 .search-box {
   width: 100%;
-  margin-bottom: 30px;  
+  margin-bottom: 30px;
 }
 
 @keyframes slideInTopToBottom{
@@ -109,6 +109,7 @@ main {
 }
 
 .search-box .search-bar {
+  animation: 1s slideInTopToBottom;
   display: block;
   width: 100%;
   padding: 15px;
@@ -177,4 +178,3 @@ main {
 }
 
 </style>
-//animation: 1s ease-out 0s 1s slideInTopToBottom
