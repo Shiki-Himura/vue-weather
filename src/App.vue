@@ -67,9 +67,14 @@ export default {
 </script>
 
 <style>
+@-ms-viewport{
+  width: device-width;
+}
+
 * {
   margin: 0;
-  padding: 0;box-sizing: border-box;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -97,6 +102,7 @@ main {
 .search-box {
   width: 100%;
   margin-bottom: 30px;
+
 }
 
 @keyframes slideInTopToBottom{
@@ -110,8 +116,7 @@ main {
 
 .search-box .search-bar {
   animation: 1s slideInTopToBottom;
-  display: block;
-  width: 100%;
+  min-width: 100%;
   padding: 15px;
 
   color: #313131;
